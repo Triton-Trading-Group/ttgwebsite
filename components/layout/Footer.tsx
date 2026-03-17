@@ -9,13 +9,13 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="border-t-2 border-[#080808]/20 bg-cream px-5 py-10 md:px-12 md:py-12">
+    <footer className="border-t-2 border-[#1b3a6b]/20 bg-cream px-5 py-10 md:px-12 md:py-12">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
         <div>
-          <MonoText className="mb-2 block text-sm font-semibold tracking-wider text-[#080808]">
+          <MonoText className="mb-2 block text-sm font-semibold tracking-wider text-[#1b3a6b]">
             TRITON TRADING GROUP
           </MonoText>
-          <MonoText className="text-xs text-[#080808]/30">
+          <MonoText className="text-xs text-[#080808]/40">
             University of California, San Diego
           </MonoText>
         </div>
@@ -27,7 +27,7 @@ export function Footer() {
               href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-[11px] tracking-widest uppercase text-[#080808]/35 transition-colors duration-200 hover:text-[#080808]"
+              className="font-mono text-[11px] tracking-widest uppercase text-[#080808]/35 transition-colors duration-200 hover:text-[#1b3a6b]"
             >
               {s.label}
             </a>
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-1 text-left md:text-right">
-          <span className="font-mono text-xs text-[#080808]/25" suppressHydrationWarning>
+          <span className="font-mono text-xs text-[#080808]/30" suppressHydrationWarning>
             © {new Date().getFullYear()} Triton Trading Group. All rights reserved.
           </span>
           <MonoText className="text-xs text-[#080808]/25">

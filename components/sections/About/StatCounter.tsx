@@ -43,7 +43,7 @@ export function StatCounter({ value, suffix, label }: StatCounterProps) {
 
   return (
     <div ref={boxRef} className="p-8 flex flex-col gap-2">
-      <span className="font-mono text-[10px] text-[#080808]/30 tracking-widest uppercase">
+      <span className="font-mono text-xs text-[#1b3a6b]/50 tracking-widest uppercase">
         {label}
       </span>
       <span className="text-4xl font-bold text-[#080808] tracking-tight">

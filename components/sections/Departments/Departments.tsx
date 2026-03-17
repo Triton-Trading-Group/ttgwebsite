@@ -60,7 +60,7 @@ function TextPanel({ dept }: { dept: typeof DEPTS[0] }) {
   return (
     <div className="flex h-full flex-col items-start justify-center gap-6">
       <div className="space-y-1">
-        <span className="font-mono text-[11px] tracking-widest uppercase text-[#080808]/40">
+        <span className="font-mono text-xs tracking-widest uppercase text-[#1b3a6b]/50">
           {dept.num} - {dept.label}
         </span>
         <h3 className="font-serif text-3xl font-bold leading-tight text-[#080808] lg:text-4xl">
@@ -68,24 +68,24 @@ function TextPanel({ dept }: { dept: typeof DEPTS[0] }) {
         </h3>
       </div>
 
-      <p className="max-w-sm text-sm leading-relaxed text-[#080808]/60">
+      <p className="max-w-sm text-base leading-relaxed text-[#080808]/65">
         {dept.body}
       </p>
 
       <ul className="space-y-2">
         {dept.items.map((item) => (
           <li key={item} className="flex items-start gap-2.5 text-sm text-[#080808]">
-            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-none bg-blue" />
+            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-none bg-[#1b3a6b]" />
             {item}
           </li>
         ))}
       </ul>
 
       <div>
-        <span className="mb-1 block font-mono text-[10px] tracking-widest uppercase text-[#080808]/30">
+        <span className="mb-1 block font-mono text-xs tracking-widest uppercase text-[#1b3a6b]/50">
           {dept.careersLabel}
         </span>
-        <span className="font-mono text-[11px] text-[#080808]/50">{dept.careers}</span>
+        <span className="font-mono text-xs text-[#080808]/55">{dept.careers}</span>
       </div>
     </div>
   )
@@ -142,20 +142,20 @@ export function Departments() {
   }, [reducedMotion])
 
   return (
-    <section id="departments" className="border-t border-[#080808]/20 bg-cream">
+    <section id="departments" className="border-t border-[#1b3a6b]/15 bg-cream">
       <div className="px-5 py-20 md:px-12 lg:hidden">
         <div className="mx-auto max-w-7xl">
           <div className="mb-6">
-            <span className="font-mono text-[11px] tracking-widest uppercase text-[#080808]/35">
+            <span className="font-mono text-xs tracking-widest uppercase text-[#1b3a6b]/50">
               DEPARTMENTS
             </span>
           </div>
-          <div className="mb-10 border-t border-[#080808]/20" />
+          <div className="mb-10 border-t border-[#1b3a6b]/15" />
 
           <div className="space-y-6">
             {DEPTS.map((dept) => (
-              <article key={dept.num} className="border border-[#080808]/20 bg-[#f7f8ef]">
-                <div className="relative aspect-[4/3] overflow-hidden border-b border-[#080808]/15">
+              <article key={dept.num} className="border border-[#1b3a6b]/15 bg-[#f7f8ef]">
+                <div className="relative aspect-[4/3] overflow-hidden border-b border-[#1b3a6b]/10">
                   <Image
                     src={dept.photo}
                     alt={dept.label}
@@ -179,11 +179,11 @@ export function Departments() {
         style={{ height: '600vh' }}
       >
         <div className="sticky top-0 h-screen overflow-hidden bg-cream">
-          <div className="absolute top-0 left-0 right-0 z-20 flex h-16 items-center border-b border-[#080808]/20 bg-cream px-8 md:px-14">
-            <span className="font-mono text-[11px] tracking-widest uppercase text-[#080808]/35">
+          <div className="absolute top-0 left-0 right-0 z-20 flex h-16 items-center border-b border-[#1b3a6b]/15 bg-cream px-8 md:px-14">
+            <span className="font-mono text-xs tracking-widest uppercase text-[#1b3a6b]/50">
               DEPARTMENTS
             </span>
-            <div className="ml-auto flex gap-8 font-mono text-[11px] tracking-wider text-[#080808]/25">
+            <div className="ml-auto flex gap-8 font-mono text-xs tracking-wider text-[#1b3a6b]/30">
               {DEPTS.map((d) => (
                 <span key={d.num}>{d.num} - {d.label}</span>
               ))}
@@ -215,7 +215,7 @@ export function Departments() {
             className="dept-graphic-wrap absolute top-16 bottom-0 w-1/2"
             style={{ left: '50%' }}
           >
-            <div className="absolute inset-x-6 inset-y-8 overflow-hidden border-2 border-[#080808]/20 bg-[#f0f1e8]">
+            <div className="absolute inset-x-6 inset-y-8 overflow-hidden border-2 border-[#1b3a6b]/15 bg-[#f0f1e8]">
               <div className="dept-photo-am absolute inset-0">
                 <Image
                   src={DEPTS[0].photo}
@@ -248,7 +248,7 @@ export function Departments() {
 
           <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 gap-3">
             {[0, 1, 2].map((i) => (
-              <div key={i} className="dept-progress-dot h-1.5 w-1.5 bg-[#080808]/20" />
+              <div key={i} className="dept-progress-dot h-1.5 w-1.5 bg-[#1b3a6b]/25" />
             ))}
           </div>
         </div>

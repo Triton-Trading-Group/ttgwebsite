@@ -19,8 +19,8 @@ export function FPAConsulting() {
   return (
     <div className="w-full h-full flex flex-col gap-6 p-2">
       {/* Waterfall chart */}
-      <div className="flex-1 relative border border-[#080808]/10">
-        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase">
+      <div className="flex-1 relative border border-[#1b3a6b]/15">
+        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase">
           FINANCIAL MODEL — WATERFALL
         </span>
         <svg viewBox="0 0 480 280" className="w-full h-full" aria-hidden="true">
@@ -61,15 +61,15 @@ export function FPAConsulting() {
       </div>
 
       {/* Project team structure */}
-      <div className="shrink-0 border border-[#080808]/10 divide-y divide-[#080808]/6">
-        <span className="font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase block px-4 py-2">
+      <div className="shrink-0 border border-[#1b3a6b]/15 divide-y divide-[#1b3a6b]/8">
+        <span className="font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase block px-4 py-2">
           PROJECT STRUCTURE
         </span>
         {roles.map((r, i) => (
           <div key={r.title} className="flex items-center justify-between px-4 py-2">
-            <span className="font-mono text-[10px] text-[#080808]/30 mr-3">0{i+1}</span>
-            <span className="font-mono text-[11px] text-[#080808] font-medium flex-1">{r.title}</span>
-            <span className="font-mono text-[10px] text-[#080808]/40">{r.note}</span>
+            <span className="font-mono text-xs text-[#1b3a6b]/40 mr-3">0{i+1}</span>
+            <span className="font-mono text-xs text-[#080808] font-medium flex-1">{r.title}</span>
+            <span className="font-mono text-xs text-[#080808]/45">{r.note}</span>
           </div>
         ))}
       </div>

@@ -42,7 +42,7 @@ export function Hero() {
       >
         <div className="flex flex-1 flex-col items-start">
           <div className="hero-reveal mb-5 opacity-0 md:mb-6">
-            <span className="border border-[#080808]/25 px-3 py-1 font-mono text-xs tracking-widest uppercase text-[#080808]/40">
+            <span className="border border-[#1b3a6b]/30 px-3 py-1 font-mono text-xs tracking-widest uppercase text-[#1b3a6b]/60">
               University of California, San Diego
             </span>
           </div>
@@ -56,20 +56,20 @@ export function Hero() {
             Group
           </h1>
 
-          <p className="hero-reveal mb-3 max-w-md text-base leading-relaxed text-[#080808]/60 opacity-0">
+          <p className="hero-reveal mb-3 max-w-md text-lg leading-relaxed text-[#080808]/65 opacity-0">
             Asset management, quantitative finance, and real-world business advisory.
           </p>
-          <p className="hero-reveal mb-8 max-w-sm font-mono text-xs tracking-wide text-[#080808]/35 opacity-0 md:mb-10">
+          <p className="hero-reveal mb-8 max-w-sm font-mono text-sm tracking-wide text-[#080808]/40 opacity-0 md:mb-10">
             A student-run nonprofit bridging academic learning and professional practice at UCSD.
           </p>
 
           <div className="hero-reveal flex w-full flex-col gap-3 opacity-0 sm:w-auto sm:flex-row sm:flex-wrap md:gap-4">
-            <ApplyNowLink className="border-2 border-[#080808] px-6 py-3 text-center font-mono text-sm tracking-widest uppercase text-[#080808] transition-all duration-200 hover:bg-[#080808] hover:text-cream">
+            <ApplyNowLink className="border-2 border-[#1b3a6b] px-6 py-3 text-center font-mono text-sm tracking-widest uppercase text-[#1b3a6b] transition-all duration-200 hover:bg-[#1b3a6b] hover:text-cream">
               Apply Now
             </ApplyNowLink>
             <a
               href="#about"
-              className="border-2 border-[#080808]/25 px-6 py-3 text-center font-mono text-sm tracking-widest uppercase text-[#080808]/50 transition-all duration-200 hover:border-[#080808]/60 hover:text-[#080808]"
+              className="border-2 border-[#080808]/25 px-6 py-3 text-center font-mono text-sm tracking-widest uppercase text-[#080808]/50 transition-all duration-200 hover:border-[#1b3a6b]/40 hover:text-[#1b3a6b]"
             >
               Learn More
             </a>
@@ -77,7 +77,7 @@ export function Hero() {
         </div>
 
         <div className="hero-reveal w-full max-w-xl flex-1 self-stretch opacity-0 lg:self-auto">
-          <div className="overflow-hidden border-2 border-[#080808]/20">
+          <div className="overflow-hidden border-2 border-[#1b3a6b]/20">
             <Image
               src="/images/brand/group_photoshoot.png"
               alt="Triton Trading Group"

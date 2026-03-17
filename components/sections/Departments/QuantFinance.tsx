@@ -28,8 +28,8 @@ export function QuantFinance() {
   return (
     <div className="w-full h-full flex flex-col gap-6 p-2">
       {/* Signal chart */}
-      <div className="flex-1 relative border border-[#080808]/10">
-        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase">
+      <div className="flex-1 relative border border-[#1b3a6b]/15">
+        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase">
           ALGORITHMIC SIGNAL CHART
         </span>
         <svg viewBox="0 0 470 280" className="w-full h-full" aria-hidden="true">
@@ -76,12 +76,12 @@ export function QuantFinance() {
 
       {/* Tools */}
       <div className="shrink-0">
-        <span className="font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase block mb-3">
+        <span className="font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase block mb-3">
           TOOLS & TECH STACK
         </span>
         <div className="flex flex-wrap gap-2">
           {tools.map((t) => (
-            <span key={t} className="font-mono text-[10px] text-[#080808] border border-[#080808]/20 px-3 py-1">
+            <span key={t} className="font-mono text-xs text-[#080808] border border-[#1b3a6b]/20 px-3 py-1">
               {t}
             </span>
           ))}

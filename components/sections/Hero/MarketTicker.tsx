@@ -62,7 +62,7 @@ export function MarketTicker() {
     const items = [...quotes, ...quotes];
 
     return (
-        <div className="border-t-2 border-b-2 border-[#080808]/20 overflow-hidden py-2 bg-[#f0f1e8]">
+        <div className="border-t-2 border-b-2 border-[#1b3a6b]/20 overflow-hidden py-2 bg-[#f0f1e8]">
             <div className="flex gap-12 animate-ticker whitespace-nowrap">
                 {items.map((q, i) => {
                     const pos = q.changePercent >= 0;
@@ -70,7 +70,7 @@ export function MarketTicker() {
                     return (
                         <span
                             key={i}
-                            className={`font-mono text-xs tracking-wider shrink-0 ${
+                            className={`font-mono text-sm tracking-wider shrink-0 ${
                                 pos ? "text-[#00994d]" : "text-[#cc2222]"
                             }`}
                         >
@@ -84,7 +84,7 @@ export function MarketTicker() {
                     return (
                         <span
                             key={i}
-                            className={`font-mono text-xs tracking-wider shrink-0 ${
+                            className={`font-mono text-sm tracking-wider shrink-0 ${
                                 pos ? "text-[#00994d]" : "text-[#cc2222]"
                             }`}
                         >

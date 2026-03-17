@@ -21,8 +21,8 @@ export function AssetManagement() {
   return (
     <div className="w-full h-full flex flex-col gap-6 p-2">
       {/* Chart */}
-      <div className="flex-1 relative border border-[#080808]/10">
-        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase">
+      <div className="flex-1 relative border border-[#1b3a6b]/15">
+        <span className="absolute top-3 left-4 font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase">
           PORTFOLIO PERFORMANCE
         </span>
         <svg viewBox="0 0 480 300" className="w-full h-full" aria-hidden="true">
@@ -58,13 +58,13 @@ export function AssetManagement() {
 
       {/* Sector bars */}
       <div className="shrink-0 space-y-2 px-1">
-        <span className="font-mono text-[10px] text-[#080808]/40 tracking-widest uppercase block mb-3">
+        <span className="font-mono text-[10px] text-[#1b3a6b]/50 tracking-widest uppercase block mb-3">
           SECTOR ALLOCATION
         </span>
         {sectors.map((s) => (
           <div key={s.label} className="flex items-center gap-3">
-            <span className="font-mono text-[10px] text-[#080808]/50 w-32 shrink-0">{s.label}</span>
-            <div className="flex-1 h-1.5 bg-[#080808]/6">
+            <span className="font-mono text-[10px] text-[#080808]/55 w-32 shrink-0">{s.label}</span>
+            <div className="flex-1 h-1.5 bg-[#1b3a6b]/6">
               <div
                 className="h-full bg-[#080808]"
                 style={{ width: `${s.pct * 3}%` }}

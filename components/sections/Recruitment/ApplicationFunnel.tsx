@@ -37,12 +37,12 @@ export function ApplicationFunnel() {
       {FUNNEL_STAGES.map((stage, i) => (
         <div key={i} className="funnel-stage">
           <div className="flex justify-between items-center mb-1">
-            <span className="font-mono text-[11px] text-[#080808] font-medium">{stage.label}</span>
-            <span className="font-mono text-[10px] text-[#080808]/40">{stage.note}</span>
+            <span className="font-mono text-xs text-[#080808] font-medium">{stage.label}</span>
+            <span className="font-mono text-xs text-[#080808]/40">{stage.note}</span>
           </div>
           <div className="flex justify-start">
             <div
-              className="h-8 border border-[#080808]/15 bg-[#080808]/5 flex items-center px-3"
+              className="h-8 border border-[#1b3a6b]/20 bg-[#1b3a6b]/5 flex items-center px-3"
               style={{
                 width: `${stage.width}%`,
                 clipPath: i < FUNNEL_STAGES.length - 1
@@ -53,7 +53,7 @@ export function ApplicationFunnel() {
           </div>
         </div>
       ))}
-      <p className="font-mono text-[10px] text-[#080808]/30 pt-4">
+      <p className="font-mono text-xs text-[#1b3a6b]/40 pt-4">
         We welcome students from all majors. Prior finance experience is not required.
       </p>
     </div>

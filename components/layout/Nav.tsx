@@ -63,7 +63,7 @@ export function Nav() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-12 transition-all duration-300 ${
         scrolled
-          ? 'bg-cream/92 backdrop-blur-md border-b-2 border-[#080808]/20'
+          ? 'bg-cream/92 backdrop-blur-md border-b border-[#1b3a6b]/20'
           : 'bg-transparent'
       }`}
     >
@@ -88,8 +88,8 @@ export function Nav() {
                 href={link.href}
                 className={`font-mono text-xs tracking-widest uppercase transition-colors duration-200 ${
                   active
-                    ? 'text-[#080808]'
-                    : 'text-[#080808]/40 hover:text-[#080808]/80'
+                    ? 'text-[#1b3a6b]'
+                    : 'text-[#080808]/40 hover:text-[#1b3a6b]'
                 }`}
               >
                 {link.label}
@@ -98,7 +98,7 @@ export function Nav() {
           })}
           <Link
             href="/#recruitment"
-            className="border border-[#080808] px-4 py-1.5 font-mono text-xs tracking-widest uppercase text-[#080808] transition-all duration-200 hover:bg-[#080808] hover:text-white"
+            className="border border-[#1b3a6b] px-4 py-1.5 font-mono text-xs tracking-widest uppercase text-[#1b3a6b] transition-all duration-200 hover:bg-[#1b3a6b] hover:text-white"
           >
             APPLY
           </Link>
@@ -129,7 +129,7 @@ export function Nav() {
                   key={link.href}
                   href={link.href}
                   className={`px-1 py-3 font-mono text-xs tracking-[0.22em] uppercase transition-colors duration-200 ${
-                    active ? 'text-[#080808]' : 'text-[#080808]/55'
+                    active ? 'text-[#1b3a6b]' : 'text-[#080808]/55'
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -139,7 +139,7 @@ export function Nav() {
             })}
             <Link
               href="/#recruitment"
-              className="mt-2 inline-flex w-full items-center justify-center border border-[#080808] px-4 py-3 font-mono text-xs tracking-[0.22em] uppercase text-[#080808] transition-all duration-200"
+              className="mt-2 inline-flex w-full items-center justify-center border border-[#1b3a6b] px-4 py-3 font-mono text-xs tracking-[0.22em] uppercase text-[#1b3a6b] transition-all duration-200 hover:bg-[#1b3a6b] hover:text-white"
               onClick={() => setMenuOpen(false)}
             >
               Apply
